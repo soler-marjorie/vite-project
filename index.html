@@ -4,15 +4,91 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Vite App</title>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"
+    ></script> 
+
   </head>
-  <body>
-    <div id="app"></div>
+  <body id="app">
+    <!--
+      <div class="boxBar">
+        <div class="bar">
 
-    <p>LOL</p>
-    <p>MDR</p>
-    <p>XD</p>
+          
+        </div>
+      </div>
 
-    <script type="module" src="Exos\Exercice-boucles\boucle.js"></script>
+      <div>
+        <h1 class="" id="mainTitle">D.O.M Events</h1>
+
+        <buton class="Ajout">Ajouter classe</buton>
+        <buton class="suppr">Suppr classe</buton>
+        <buton class="toggle">Toggle Classe</buton>
+      </div>
+
+      <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque dapibus, laoreet libero et, ultrices augue. Vivamus quis tellus eget urna aliquam dapibus sit amet et quam. Integer porttitor justo metus, in lacinia erat pretium sit amet. Phasellus sed tellus a nibh sagittis dapibus. Duis semper ipsum neque, in finibus ipsum laoreet sed. Ut aliquam augue a purus placerat condimentum. Nulla facilisi. Nullam non ullamcorper diam. Aliquam porttitor turpis accumsan nibh pellentesque malesuada. Duis malesuada est id quam ultricies semper.
+          </p>
+            In ac sapien quis lectus interdum tempor id vel neque. Praesent egestas euismod turpis quis rutrum. Integer quis nisi lorem. Vestibulum condimentum ligula eu finibus sollicitudin. Curabitur vitae enim sit amet urna finibus maximus ut eget nulla. Nullam elit nisi, tristique sed magna bibendum, malesuada consequat nisi. Nullam facilisis tristique lacus sed varius. Sed imperdiet accumsan pulvinar. Maecenas imperdiet lacus semper justo venenatis rhoncus.
+          <p>
+            Integer augue nulla, dignissim eu purus id, elementum iaculis erat. Quisque sed ipsum dapibus, tempor magna sed, ullamcorper massa. Ut finibus finibus euismod. Suspendisse non auctor augue, eget dignissim nunc. Nulla facilisi. Nullam aliquet, risus eget hendrerit vestibulum, sapien diam vulputate ante, non congue lacus quam ut neque. Proin tristique pretium urna sed vehicula. Proin feugiat dictum mauris eu tincidunt.
+          </p>
+            Quisque dictum viverra metus, a tincidunt sem. Nulla convallis malesuada volutpat. Nullam dapibus pulvinar diam, ac fermentum lorem hendrerit a. Praesent rhoncus non sem ut pharetra. Nullam dictum, neque eleifend imperdiet tristique, elit lacus lacinia erat, vel commodo magna libero sed felis. Morbi vel dignissim lectus. Maecenas nec magna ut ex laoreet finibus sit amet quis nibh. Sed id eros a tortor interdum gravida. Donec finibus leo id libero lobortis, ut ullamcorper arcu elementum. Phasellus faucibus purus at congue tristique. Quisque rutrum bibendum porttitor. Vestibulum ultricies erat odio, ut pretium turpis blandit eu. Phasellus laoreet varius justo, sit amet tincidunt elit.
+          <p>
+            Nam sit amet nisi ut odio vehicula tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam tempus molestie leo a suscipit. Integer cursus lacus consequat tincidunt auctor. Vivamus sit amet sodales neque. Nulla facilisi. Praesent fermentum pharetra laoreet. Fusce est sem, aliquam eu nulla ut, scelerisque blandit ligula. Aenean ac nibh orci. Sed lectus ipsum, auctor ut vestibulum vitae, feugiat vulputate arcu. Nunc tincidunt diam in pulvinar elementum. Suspendisse diam mauris, tempor sit amet magna sed, ullamcorper lobortis turpis. Aenean venenatis, erat eu tristique tristique, nisl tortor eleifend sem, sed accumsan lorem ipsum a diam. Etiam convallis placerat porttitor.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque dapibus, laoreet libero et, ultrices augue. Vivamus quis tellus eget urna aliquam dapibus sit amet et quam. Integer porttitor justo metus, in lacinia erat pretium sit amet. Phasellus sed tellus a nibh sagittis dapibus. Duis semper ipsum neque, in finibus ipsum laoreet sed. Ut aliquam augue a purus placerat condimentum. Nulla facilisi. Nullam non ullamcorper diam. Aliquam porttitor turpis accumsan nibh pellentesque malesuada. Duis malesuada est id quam ultricies semper.
+          </p>
+            In ac sapien quis lectus interdum tempor id vel neque. Praesent egestas euismod turpis quis rutrum. Integer quis nisi lorem. Vestibulum condimentum ligula eu finibus sollicitudin. Curabitur vitae enim sit amet urna finibus maximus ut eget nulla. Nullam elit nisi, tristique sed magna bibendum, malesuada consequat nisi. Nullam facilisis tristique lacus sed varius. Sed imperdiet accumsan pulvinar. Maecenas imperdiet lacus semper justo venenatis rhoncus.
+          <p>
+            Integer augue nulla, dignissim eu purus id, elementum iaculis erat. Quisque sed ipsum dapibus, tempor magna sed, ullamcorper massa. Ut finibus finibus euismod. Suspendisse non auctor augue, eget dignissim nunc. Nulla facilisi. Nullam aliquet, risus eget hendrerit vestibulum, sapien diam vulputate ante, non congue lacus quam ut neque. Proin tristique pretium urna sed vehicula. Proin feugiat dictum mauris eu tincidunt.
+          </p>
+            Quisque dictum viverra metus, a tincidunt sem. Nulla convallis malesuada volutpat. Nullam dapibus pulvinar diam, ac fermentum lorem hendrerit a. Praesent rhoncus non sem ut pharetra. Nullam dictum, neque eleifend imperdiet tristique, elit lacus lacinia erat, vel commodo magna libero sed felis. Morbi vel dignissim lectus. Maecenas nec magna ut ex laoreet finibus sit amet quis nibh. Sed id eros a tortor interdum gravida. Donec finibus leo id libero lobortis, ut ullamcorper arcu elementum. Phasellus faucibus purus at congue tristique. Quisque rutrum bibendum porttitor. Vestibulum ultricies erat odio, ut pretium turpis blandit eu. Phasellus laoreet varius justo, sit amet tincidunt elit.
+          <p>
+            Nam sit amet nisi ut odio vehicula tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam tempus molestie leo a suscipit. Integer cursus lacus consequat tincidunt auctor. Vivamus sit amet sodales neque. Nulla facilisi. Praesent fermentum pharetra laoreet. Fusce est sem, aliquam eu nulla ut, scelerisque blandit ligula. Aenean ac nibh orci. Sed lectus ipsum, auctor ut vestibulum vitae, feugiat vulputate arcu. Nunc tincidunt diam in pulvinar elementum. Suspendisse diam mauris, tempor sit amet magna sed, ullamcorper lobortis turpis. Aenean venenatis, erat eu tristique tristique, nisl tortor eleifend sem, sed accumsan lorem ipsum a diam. Etiam convallis placerat porttitor.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque dapibus, laoreet libero et, ultrices augue. Vivamus quis tellus eget urna aliquam dapibus sit amet et quam. Integer porttitor justo metus, in lacinia erat pretium sit amet. Phasellus sed tellus a nibh sagittis dapibus. Duis semper ipsum neque, in finibus ipsum laoreet sed. Ut aliquam augue a purus placerat condimentum. Nulla facilisi. Nullam non ullamcorper diam. Aliquam porttitor turpis accumsan nibh pellentesque malesuada. Duis malesuada est id quam ultricies semper.
+          </p>
+            In ac sapien quis lectus interdum tempor id vel neque. Praesent egestas euismod turpis quis rutrum. Integer quis nisi lorem. Vestibulum condimentum ligula eu finibus sollicitudin. Curabitur vitae enim sit amet urna finibus maximus ut eget nulla. Nullam elit nisi, tristique sed magna bibendum, malesuada consequat nisi. Nullam facilisis tristique lacus sed varius. Sed imperdiet accumsan pulvinar. Maecenas imperdiet lacus semper justo venenatis rhoncus.
+          <p>
+            Integer augue nulla, dignissim eu purus id, elementum iaculis erat. Quisque sed ipsum dapibus, tempor magna sed, ullamcorper massa. Ut finibus finibus euismod. Suspendisse non auctor augue, eget dignissim nunc. Nulla facilisi. Nullam aliquet, risus eget hendrerit vestibulum, sapien diam vulputate ante, non congue lacus quam ut neque. Proin tristique pretium urna sed vehicula. Proin feugiat dictum mauris eu tincidunt.
+          </p>
+            Quisque dictum viverra metus, a tincidunt sem. Nulla convallis malesuada volutpat. Nullam dapibus pulvinar diam, ac fermentum lorem hendrerit a. Praesent rhoncus non sem ut pharetra. Nullam dictum, neque eleifend imperdiet tristique, elit lacus lacinia erat, vel commodo magna libero sed felis. Morbi vel dignissim lectus. Maecenas nec magna ut ex laoreet finibus sit amet quis nibh. Sed id eros a tortor interdum gravida. Donec finibus leo id libero lobortis, ut ullamcorper arcu elementum. Phasellus faucibus purus at congue tristique. Quisque rutrum bibendum porttitor. Vestibulum ultricies erat odio, ut pretium turpis blandit eu. Phasellus laoreet varius justo, sit amet tincidunt elit.
+          <p>
+            Nam sit amet nisi ut odio vehicula tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam tempus molestie leo a suscipit. Integer cursus lacus consequat tincidunt auctor. Vivamus sit amet sodales neque. Nulla facilisi. Praesent fermentum pharetra laoreet. Fusce est sem, aliquam eu nulla ut, scelerisque blandit ligula. Aenean ac nibh orci. Sed lectus ipsum, auctor ut vestibulum vitae, feugiat vulputate arcu. Nunc tincidunt diam in pulvinar elementum. Suspendisse diam mauris, tempor sit amet magna sed, ullamcorper lobortis turpis. Aenean venenatis, erat eu tristique tristique, nisl tortor eleifend sem, sed accumsan lorem ipsum a diam. Etiam convallis placerat porttitor.
+          </p>
+      </div>
+
+      <div>
+        <textarea id="texte"></textarea>
+        <p id="receveur"></p>
+
+        <button id="submit">submit</button>
+      </div>
+    -->
+    <div class="apiContact">
+        <h1>Mon pokedex</h1>
+        <div class="api row"></div>
+    </div>
+
+    <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+    <script src="Exos\vanta\vanta.js"></script>
+    -->
+    <script src="Exos\API\api.js"></script>
+    
   </body>
 </html>
