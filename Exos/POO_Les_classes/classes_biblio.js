@@ -30,7 +30,7 @@ class Livre{
 class Bibliotheque{
     constructor(nom, livres){
         this.nom = nom;
-        this.livres = livres;
+        this.livres = [];
     }
 
     //méthodes
@@ -73,3 +73,68 @@ maBibliotheque.emprunterLivre("1984"); // Livre emprunté avec succès.
 maBibliotheque.emprunterLivre("1984"); // Déclenche exception livre n'est plus disponible.
 maBibliotheque.retournerLivre("1984"); // Livre retourné avec succès.
 maBibliotheque.emprunterLivre("198999"); // Déclenche exception livre n'existe pas.
+
+
+/*Soluce class Livre
+class Livre {
+    constructor(titre, auteur) {
+        this.titre = titre;
+        this.auteur = auteur;
+        this.disponible = true;
+    }
+
+    emprunter() {
+        try {
+            if (!this.disponible) {
+                throw new Error(`Le livre "${this.titre}" n'est pas disponible.`);
+            }
+            this.disponible = false;
+        } catch (error) {
+            console.error(error.message);
+        }
+    }
+
+    retourner() {
+        this.disponible = true;
+    }
+}
+
+//Soluce class biblio
+class Bibliotheque {
+    constructor(nom) {
+        this.nom = nom;
+        this.livres = [];
+    }
+
+    ajouterLivre(livre) {
+        this.livres.push(livre);
+    }
+
+    emprunterLivre(titre) {
+        try {
+            const livre = this.livres.find(unLivre => unLivre.titre === titre);
+            // console.log(livre);
+            // Si on a pas trouvé le livre, si le find nous a retourné undefined,
+            // alors on lève une erreur custom
+            if (!livre) {
+                throw new Error(`Le livre "${titre}" n'existe pas dans la bibliothèque.`);
+            }
+            livre.emprunter();
+        } catch (error) {
+            console.error(error.message);
+        }
+    }
+
+    retournerLivre(titre) {
+        try {
+            const livre = this.livres.find(unLivre => unLivre.titre === titre);
+            if (!livre) {
+                throw new Error(`Le livre "${titre}" n'a jamais été les stocks de la bibliothèque.`);
+            }
+            livre.retourner();
+        } catch (error) {
+            console.error(error.message);
+        }
+    }
+}
+    */
