@@ -122,18 +122,130 @@
     </div>
     -->
 
-    <!--
-    <hello-world></hello-world>-->
+    <!-- Créer des balises 
+    <hello-world></hello-world>
 
     <hello-world mot="TOTOTOTOT"></hello-world>
 
+    //Ajouter des phrases directement dans le HTML 
+    <phrase-box phrase="Bonjour, comment ça va ?"></phrase-box>
+    <phrase-box phrase="Ceci est un Custom Element."></phrase-box>
+    <phrase-box phrase="Passez une excellente journée !"></phrase-box>
+
+    //Ajouter des images
+    <user-box imageUser="https://picsum.photos/150/150" nameUser="John" ageUser="25"></user-box>
+    <user-box imageUser="https://picsum.photos/150/150" nameUser="Steven Seagal" ageUser="35"></user-box>
+    <user-box imageUser="https://picsum.photos/150/150" nameUser="Mathieu Kassovitz" ageUser="50"></user-box>
+    -->
 
     <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
     <script src="Exos\vanta\vanta.js"></script>
     -->
-    <script type="module" src="Exos\creation tag\tag_creation.js"></script>
+
+    <!--Firebase
+    // Navbar 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"></nav>
+    //Main Content
+    <div id="app" class="container min-vh-100">
+      <h1>Ici TP-5 Todo List avec Firebase Real Time Database</h1>
+      <h2>Liste des tâches pour XP en JS</h2>
+      <h3>Objectifs level Mage Noir (lvl 99)</h3>
+      
+      //Section de hhero 
+      <div class="mb-3">
+        <input type="text" id="taskInput" class="form-control" placeholder="Ajouter une nouvelle tâche" />
+        <button id="addTaskButton" class="btn btn-primary mt-2">Ajouter</button>
+      </div>
+      
+      <ul id="taskList" class="list-group">
+        //Les tâches seront ajoutées ici dynamiquement 
+      </ul>
+    </div>
+
+    -->
+
+
+    <!-- Cypress test 
+    <h1>Voici un formulaire de connexion</h1>
+
+    <form>
+      //E-mail input
+        <div class="relative mb-6" data-twe-input-wrapper-init>
+          <input
+            type="email"
+            class="email peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+            id="exampleInputEmail2"
+            aria-describedby="emailHelp"
+            placeholder="Enter email" />
+          <label
+            for="exampleInputEmail2"
+            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+            >Email address</label
+          >
+        </div>
+  
+        //Password input
+        <div class="relative mb-6" data-twe-input-wrapper-init>
+          <input
+            type="password"
+            class="password peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+            id="exampleInputPassword2"
+            placeholder="Password" />
+          <label
+            for="exampleInputPassword2"
+            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+            >Password</label
+          >
+        </div>
+     
+        //Sign in button
+        <button
+          type="submit"
+          class="dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]] inline-block w-full rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+          data-twe-ripple-init
+          data-twe-ripple-color="light">
+          Sign in
+        </button>
+      </form>
+
+
+
+      --Calculatrice 
+      <div class="addingNumbers">
+        <h1>AddingNumbers...</h1>
+
+        <input type="number" name="firstNumber" id="firstNumber">
+        
+        <h2>+</h2>
+
+        <input type="number" name="secondNumber" id="secondNumber">
+        <hr>
+        <button id="calculBtn">Calcul</button>
+
+        <h2 id="result">Résultat : </h2>
+      </div>-->
+
+      <h1>Pokedex</h1>
+      <div id="pokeListe" style="background-color: rgb(177, 177, 106);"></div>
+
+    <!--
+    // Footer 
+    <footer></footer>
+
+    // firebase sdk link goes here 
+    // The core Firebase JS SDK is always required and must be listed first
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+    // Scripts 
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="tp-5.js"></script>
     
+    <script type="module" src="Exos\firebase\firebase.js"></script>
+    -->
+
+    <script src="Exos\Test E2E\pokedex.js"></script>
+
   </body>
 </html>
